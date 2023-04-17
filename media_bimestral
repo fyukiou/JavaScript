@@ -1,0 +1,32 @@
+<h1> Média bimestral</h1>
+
+<script>
+    var nome = prompt('digite seu nome: ');
+
+    alert("bem vindo ao nosso site sr(a)" + nome);
+
+    var nota1 = prompt("digite a primeira nota");
+    var nota2= prompt("digite a segunda nota");
+    var nota3 = prompt("digite a terceira nota");
+    var nota4 = prompt("digite a quarta nota");
+
+    var soma = (parseFloat(nota1) +
+                parseFloat(nota2) +
+                parseFloat(nota3) +
+                parseFloat(nota4));
+
+    var media = soma / 4
+
+    document.write("a soma das suas notas é: " + soma + "<br>");
+
+    document.write("a media das suas notas é: " + media + "<br>");
+
+    if(media < 60){
+         document.write("estude mais, você está repovado :(");
+
+        } else {
+        document.write("parabéns, você esta aprovado :)");
+    
+        }
+
+</script>
